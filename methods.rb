@@ -1,39 +1,37 @@
 # Your code here!
 
-  #greetProgrammer
-  def greetProgrammer
-  puts  ("Hello, programmer!")
-  end
-  greet_programmer
+def greet_programmer
+  puts "Hello, programmer!"
 
-  #greet
-  def greet(name = "Naureen") 
+end
+
+def greet(name)
   puts "Hello, #{name}!"
-  end
+end
 
-  greet
-  greet "Jacob"
+greet ("Naureen")
+greet ("Jimmy")
 
-  #greet_with_default
-  def greetWithDefault(name = "programmer") 
+def greet_with_default(name = "programmer")
   puts "Hello, #{name}!"
-  end
+end
 
-  greet_with_default
+greet_with_default 
+greet_with_default "Naureen"
 
-  greet_with_default "Naureen"
-
-   #add
-   def add(num1, num2) 
+#add
+def add(num1, num2)
   return num1 + num2
-   end
-   add(2,5)
+end
+sum1 = add(3, 4)
+sum2 = add(3, 4)
 
-   #halve
-   def halve(num1) 
-     if num1.class != Integer
-        return nil
-     end
-     num1/2
-    end
-    halve(6)
+#halve
+def halve(nam)
+  if nam.class != Integer
+    return nil
+  end
+
+  return nam/2
+end
+halve (6)
